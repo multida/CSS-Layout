@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>그리드 시스템</title>
+
+  <link rel="stylesheet" href="./style.css">
+
+</head>
+<body>
+  <h1>그리드 시스템</h1>
+  <div class="text-box">
+    <p>
+      flexbox는 레이아웃을 보다 편하게 배치하고자 할때 용이하다.
+    </p>
+    <p>
+      아이템들을 가로 방향으로 배치하고, width와 height 값이 컨테이너 만큼 늘어나서 아주 편리하게 조정이 가능하다.
+    </p>
+    <p>
+      그러나 이렇게 편리한 flexbox도 격자무늬(?)를 표현하기에는 조금 어려웠고, flex-wrap: wrap; 상에서의 배치가 조금 까다로웠다.
+    </p>
+    <p>
+      그래서 생겨난게 grid라고 한다.. (?) - 나의 생각 ㅋㅋ
+    </p>
+  </div>
+  <div class="example">
+    <div class="container">
+      <div class="item">1</div>
+      <div class="item">2</div>
+      <div class="item">3</div>
+      <div class="item">4</div>
+      <div class="item">1</div>
+      <div class="item">2</div>
+      <div class="item">3</div>
+      <div class="item">4</div>
+      <div class="item">1</div>
+      <div class="item">2</div>
+      <div class="item">3</div>
+      <div class="item">4</div>
+    </div>
+  </div>
+
+  <div class="grid">
+    <div class="header"></div>
+    <div class="content"></div>
+    <div class="nav"></div>
+    <div class="footer"></div>
+  </div>
+</body>
+</html>

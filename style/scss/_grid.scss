@@ -1,0 +1,57 @@
+h1 {
+  height: 28px;
+  margin-bottom: 40px;
+}
+
+.text-box {
+  margin-bottom: 40px;
+
+  p {
+    margin-bottom: 10px;
+    font-size: 18px;
+  }
+}
+
+.example {
+  .container {
+    display: grid;
+    grid-template-columns: 250px 250px 250px; //각 width 값을 설정 할 수 있다.
+    grid-template-rows: 100px 50px 300px;
+    // column-gap: 10px;
+    // row-gap: 10px;
+    gap: 10px; //column-gap, row-gap 같이 써줄때
+
+    .item {
+      display: -webkit-flex;
+      display: -ms-flex;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      background-color: green;
+      font-size: 50px;
+      color: #fff;
+    }
+  }
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: 200px 200px 200px 200px;
+  grid-template-rows: 300px 300px 300px 300px;
+
+  .header {
+    background-color: #B2e7e8;
+  }
+
+  .content {
+    background-color: #304D63;
+  }
+
+  .nav {
+    background-color: #F2D096;
+  }
+
+  .footer {
+    background-color: #ED8975;
+  }
+}
