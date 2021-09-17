@@ -1,0 +1,37 @@
+h1 {
+  height: 28px;
+  margin-bottom: 40px; }
+
+.text-box {
+  margin-bottom: 40px; }
+  .text-box p {
+    font-size: 18px;
+    margin-bottom: 10px; }
+
+.example {
+  margin-bottom: 40px; }
+  .example .container {
+    display: grid;
+    grid-gap: 10px;
+    grid-template-columns: 250px 250px 250px;
+    grid-template-rows: 100px 50px 300px; }
+    .example .container .item {
+      align-items: center;
+      background-color: #b2e7e8;
+      color: #fff;
+      display: flex;
+      font-size: 50px;
+      justify-content: center; }
+
+.grid {
+  display: grid;
+  grid-template-columns: 200px 200px 200px 200px;
+  grid-template-rows: 300px 300px 300px 300px; }
+  .grid .header {
+    background-color: #b2e7e8; }
+  .grid .content {
+    background-color: #304d63; }
+  .grid .nav {
+    background-color: #f2d096; }
+  .grid .footer {
+    background-color: #ed8975; }
