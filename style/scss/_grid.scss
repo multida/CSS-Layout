@@ -4,7 +4,6 @@ $nav-color: #f2d096;
 $footer-color: #ed8975;
 $white: #fff;
 
-
 h1 {
   height: 28px;
   margin-bottom: 40px;
@@ -41,22 +40,27 @@ h1 {
 
 .grid {
   display: grid;
-  grid-template-columns: 200px 200px 200px 200px;
-  grid-template-rows: 300px 300px 300px 300px;
+  grid-template-areas: 'header header header header' 'content content content nav' 'content content content nav' 'footer footer footer footer';
+  grid-template-columns: repeat(4, 200px); //200px 200px 200px 200px
+  grid-template-rows: 100px repeat(2, 300px) 100px; //300px 300px 300px 300px
 
   .header {
     background-color: $header-color;
+    grid-area: header;
   }
 
   .content {
     background-color: $content-color;
+    grid-area: content;
   }
 
   .nav {
     background-color: $nav-color;
+    grid-area: nav;
   }
 
   .footer {
     background-color: $footer-color;
+    grid-area: footer;
   }
 }
