@@ -40,27 +40,54 @@ h1 {
 
 .grid {
   display: grid;
-  grid-template-areas: 'header header header header' 'content content content nav' 'content content content nav' 'footer footer footer footer';
-  grid-template-columns: repeat(4, 200px); //200px 200px 200px 200px
-  grid-template-rows: 100px repeat(2, 300px) 100px; //300px 300px 300px 300px
+  grid-gap: 10px;
+  grid-template-columns: repeat(4, 100px);
+  grid-template-rows: repeat(4, 100px);
 
   .header {
     background-color: $header-color;
-    grid-area: header;
+    color: $white;
+    display: flex;
+    font-size: 20px;
+    align-items: center;
+    justify-content: center;
+    grid-column-end: 5;
+    grid-column-start: 1; //라인이 1에서 시작해서 5로 끝남
   }
 
   .content {
     background-color: $content-color;
-    grid-area: content;
+    color: $white;
+    display: flex;
+    font-size: 20px;
+    align-items: center;
+    justify-content: center;
+    grid-column-end: 4;
+    grid-column-start: 1;
+    grid-row-start: 2;
+    grid-row-end: 4;
   }
 
   .nav {
     background-color: $nav-color;
-    grid-area: nav;
+    color: $white;
+    display: flex;
+    font-size: 20px;
+    align-items: center;
+    justify-content: center;
+    grid-row-start: 2;
+    grid-row-end: 4;
+
   }
 
   .footer {
     background-color: $footer-color;
-    grid-area: footer;
+    color: $white;
+    display: flex;
+    font-size: 20px;
+    align-items: center;
+    justify-content: center;
+    grid-column-start: 1;
+    grid-column-end: 5;
   }
 }
