@@ -39,12 +39,16 @@ h1 {
 }
 
 .grid {
+  background-color: grey;
   display: grid;
-  height: 50vh;
+  height: 250vh;
   grid-gap: 5px;
-  grid-template-columns: repeat(4, 1fr);
-  grid-template-rows: repeat(4, 1fr);
-  place-items: start center; // align-items(수직) justify-items(수평)
+  grid-template-columns: repeat(4, 100px);
+  grid-template-rows: repeat(4, 100px);
+  // justify-content: space-between; //grid 전체 수평 정렬
+  // align-content: center; // grid 전체 수직 정렬
+
+  place-content: center space-between;
 
   .header {
     align-items: center;
