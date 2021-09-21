@@ -40,11 +40,14 @@ h1 {
 
 .grid {
   display: grid;
-  height: 50vh; //grid-template-rows을 fr로 사용해주려면 높이값이 필요하다. 
+  height: 50vh;
   grid-gap: 10px;
-  grid-template-columns: repeat(4, 1fr);
-  //fr: fraction 사용 가능한 공간. 공간을 가질 수 있는 만큼 가지고 4번 반복. es)4fr 2fr 1fr 1fr
-  grid-template-rows: repeat(4, 1fr);
+  grid-template:
+    "header header header header" 1fr
+    "content content content nav" 2fr
+    "footer footer footer footer" 1fr / 1fr 1fr 1fr 1fr;
+
+    //grid-template에서는 repeat이 적용되지 않는다. 
 
   .header {
     align-items: center;
@@ -53,6 +56,7 @@ h1 {
     display: flex;
     font-size: 20px;
     justify-content: center;
+    grid-area: header;
   }
 
   .content {
@@ -62,6 +66,7 @@ h1 {
     display: flex;
     font-size: 20px;
     justify-content: center;
+    grid-area: content;
   }
 
   .nav {
@@ -71,6 +76,7 @@ h1 {
     display: flex;
     font-size: 20px;
     justify-content: center;
+    grid-area: nav;
 
   }
 
@@ -81,5 +87,6 @@ h1 {
     display: flex;
     font-size: 20px;
     justify-content: center;
+    grid-area: footer;
   }
 }
