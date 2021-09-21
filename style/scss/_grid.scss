@@ -41,14 +41,10 @@ h1 {
 .grid {
   background-color: grey;
   display: grid;
-  height: 250vh;
+  height: 50vh;
   grid-gap: 5px;
   grid-template-columns: repeat(4, 100px);
   grid-template-rows: repeat(4, 100px);
-  // justify-content: space-between; //grid 전체 수평 정렬
-  // align-content: center; // grid 전체 수직 정렬
-
-  place-content: center space-between;
 
   .header {
     align-items: center;
@@ -57,6 +53,7 @@ h1 {
     display: flex;
     font-size: 20px;
     justify-content: center;
+    place-self: end center; 
   }
 
   .content {
@@ -66,6 +63,7 @@ h1 {
     display: flex;
     font-size: 20px;
     justify-content: center;
+    place-self: center center; 
   }
 
   .nav {
@@ -75,6 +73,8 @@ h1 {
     display: flex;
     font-size: 20px;
     justify-content: center;
+    align-self: end;
+    justify-self: end; 
   }
 
   .footer {
@@ -84,5 +84,7 @@ h1 {
     display: flex;
     font-size: 20px;
     justify-content: center;
+    align-self: start;
+    justify-self: start; 
   }
 }
